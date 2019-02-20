@@ -1,21 +1,39 @@
 /*navbar styling*/
 .navbar {
-  padding: 15px 0;
+  padding: 10px 0;
   position: fixed;
   width: 100%;
   background-color: #65c6c4;
   color: white;
   z-index: 9999;
   box-shadow: 0 15px 20px -10px rgba(0, 64, 128, .2);
+  height: 40px;
+}
+
+.navbar a {
+  border: solid 1px;
+  padding: 5px 12.5px;
+  border-radius: 10px;
+  margin: 0 1px;
+  border-color: #cdeae9;
+  font-weight: 900;
+  font-size: .8em;
 }
 
 .navbar-ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-inline-start: 0;
   vertical-align: middle;
   position: relative;
+  height: 100%;
+}
+
+.navbar-ul:before {
+  content: "";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 li {
@@ -23,32 +41,71 @@ li {
 }
 
 .navbar-logo {
+  border: none;
+  float: left;
+  margin-left: 5%;
+  height: 100%;
+}
+
+.navbar-logo:before {
   display: inline-block;
-  text-align: left;
-  position: absolute;
-  left: 5%;
-  top: -3px;
+  height: 100%;
+  content: "";
+  vertical-align: middle;
+}
+
+.navbar-logo a {
+  border: none;
+  padding: 0;
+}
+
+.logo-header {
+  font-size: 2em;
+  display: inline-block;
+}
+
+.logo-header:before {
+  display: inline-block;
+  height: 100%;
+  content: "";
+  vertical-align: middle;
 }
 
 .navbar-primary {
   display: inline-block;
-  padding-left: 25px;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.navbar-primary:before {
+  display: inline-block;
+  height: 100%;
+  content: "";
+  vertical-align: middle;
 }
 
 .navbar-secondary {
+  float:right;
+  margin-right: 5%;
+  height: 100%;
+}
+
+.navbar-secondary:before {
   display: inline-block;
-  position: absolute;
-  right: 5%;
+  height: 100%;
+  content: "";
+  vertical-align: middle;
 }
 
 .navbar-link {
   padding: 0 7.5px 0;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .empty-div {
   width: 100%;
-  height: 55px;
+  height: 70px;
 }
 
 /* filters styling */
@@ -105,7 +162,8 @@ li {
   height: 75%;
   vertical-align: middle;
   border-radius: 5px;
-  margin: 5px 10px 0 0;
+  margin: 0 10px 0 0;
+  /*background-color: #eafffe;*/
 }
 
 .brand-and-reward:before {
@@ -157,13 +215,22 @@ li {
   filter: brightness(90%);
 }
 
+.reward-amount:before {
+  content: "$";
+  font-size: .75em;
+
+}
+
 .split-text {
-  color: #7f7979;
+  color: #bfb7b7;
   font-weight: lighter;
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%);
+  font-size: .75em;
+  letter-spacing: .75px;
+  font-style: italic;
 }
 
 .referral-title {
@@ -183,6 +250,8 @@ li {
 /*tag styling*/
 html {
   height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -191,6 +260,7 @@ body {
   text-align: center;
   font-family: 'Ubuntu', sans-serif;
   background-color: #ededed;
+  padding: 0;
   /*font-family: 'Fira Sans', sans-serif;*/
 }
 
@@ -209,8 +279,7 @@ a, a:visited, a:active {
 }
 
 a:hover {
-  color: inherit;
-  filter: brightness(90%);
+  color: #e1ecec;
 }
 
 .panel:hover {
@@ -219,5 +288,9 @@ a:hover {
 }
 
 h2 {
+  margin: 0;
+}
+
+h1 {
   margin: 0;
 }
