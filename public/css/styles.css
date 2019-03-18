@@ -315,6 +315,7 @@ a, a:visited {
   height: 120px;
   width: 100%;
   position: relative;
+  margin: 5% 0;
 }
 
 .profile-picture-circle {
@@ -340,6 +341,11 @@ a, a:visited {
 
 .profile-info-box {
   color: black;
+}
+
+a.profile-link {
+  display: block;
+  color: #a0a0a0;
 }
 
 
