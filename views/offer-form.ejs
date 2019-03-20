@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Create New Offer</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/offer-form-styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav>
+          <ul>
+            <li class="nav-li-logo"><a href="index.html">Split</a></li>
+            <li class="nav-li-primary">
+              <a href="">Home</a>
+              <form class="nav-li-primary-form" action="index.html" method="post">
+                <input type="search" onfocus="this.value=''" onmouseover="searchIconMouseOver()" onmouseout="searchIconMouseOut()"name="query" class="query" value="search">
+              </form>
+            </li>
+            <li class="nav-li-secondary">
+              <a href="#">Sign In</a>
+              <a href="register.html">Register</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-content">
+        <div class="form-box">
+          <h1>Create Offer</h1>
+          <hr class="style-underline">
+          <hr class="form-break">
+          <form class="" action="/offer-form" method="post">
+            <ul class='offer-form-list'>
+              <li>
+                <p class="form-sub-label">Category</p>
+                <div class="field-container field-container-med">
+                  <button class="drop-down-btn"></button>
+                  <div class="dropdown-content">
+                    
+                  </div>
+                  <i class="fas fa-caret-down"></i>
+                  <input class="form-field"  type="text" name="category" value="Select a category">
+                </div>
+              </li>
+              <li>
+                <p class="form-sub-label">Subcategory</p>
+                <div class="field-container field-container-med">
+                  <input class="form-field" type="text" name="subcategory" value="Select a subcategory">
+                </div>
+              </li>
+              <li>
+                <p class="form-sub-label">Company</p>
+                <div class="field-container field-container-med">
+                  <input class="form-field" type="text" name="company" value="">
+                </div>
+              </li>
+              <hr class="form-break">
+              <li>
+                <p class="form-sub-label">Title</p>
+                <div class="field-container field-container-lrg">
+                  <input class="form-field" type="text" name="referralTitle" value="">
+                </div>
+              </li>
+              <li>
+                <p class="form-sub-label">Description</p>
+                <input class="form-field form-field-lrg" type="text" name="description" value="">
+              </li>
+              <hr class="form-break">
+              <li>
+                <p class="form-sub-label">Upload Image</p>
+                <input class="form-field form-field-small" type="text" name="companyImage" value="">
+              </li>
+              <li>
+                <p class="form-sub-label">Referral Type</p>
+                <input class="form-field form-field-small" type="text" name="" value="">
+              </li>
+              <li>
+                <p class="form-sub-label">Offer Amount</p>
+                <input class="form-field form-field-small" type="text" name="" value="">
+              </li>
+              <li>
+                <p class="form-sub-label">Referral Cap</p>
+                <input class="form-field form-field-small" type="text" name="" value="">
+              </li>
+              <li>
+                <p class="form-sub-label">Tags</p>
+                <input class="form-field" type="text" name="" value="">
+              </li>
+              <input class="form-submit-button" type="submit" name="Submit" value="Submit">
+            </ul>
+          </form>
+        </div>
+      </main>
+      <section class="side-section">
+        <a class="create-new-offer" href='index-2.html'>
+          <i class="fas fa-plus-circle"></i>
+          <span class="new-offer-text">PUBLISH OFFER</span>
+        </a>
+        <div class="my-info-box">
+          <div class="profile-picture-box">
+            <a class="profile-picture-link" href="#">
+              <div class="profile-picture-circle">
+                <img class="profile-picture" src="images/iconmonstr-user-1.svg" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="profile-info-box">
+            <a class = "profile-link" href="">Khaoz346</a>
+            <a class = "profile-link" href="">My Profile</a>
+            <a class = "profile-link" href="">My Account</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
