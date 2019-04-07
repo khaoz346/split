@@ -13,7 +13,7 @@
       <header class="header">
         <nav>
           <ul>
-            <li class="nav-li-logo"><a href="index.html">Split</a></li>
+            <li class="nav-li-logo"><a href="/">Split</a></li>
             <li class="nav-li-primary">
               <a href="">Home</a>
               <form class="nav-li-primary-form" action="index.html" method="post">
@@ -29,17 +29,23 @@
       </header>
       <main class="main-content">
         <div class="form-box">
-          <h1>Create Offer</h1>
+          <h1>Create Your New Offer</h1>
           <hr class="style-underline">
+          <p class="form-sub-text">Please enter the details below to submit your offer for review. No funny business.</p>
           <hr class="form-break">
           <form class="" action="/offer-form" method="post">
             <ul class='offer-form-list'>
               <li>
                 <p class="form-sub-label">Category</p>
                 <div class="field-container field-container-med">
-                  <button class="drop-down-btn"></button>
+                  <button type="button" class="dropdown-btn"></button>
                   <div class="dropdown-content">
-                    
+                    <p>Auto</p>
+                    <p>Fashion</p>
+                    <p>Electronics</p>
+                    <p>Retail</p>
+                    <p>Financial Services</p>
+                    <p>Subscriptions</p>
                   </div>
                   <i class="fas fa-caret-down"></i>
                   <input class="form-field"  type="text" name="category" value="Select a category">
@@ -48,12 +54,30 @@
               <li>
                 <p class="form-sub-label">Subcategory</p>
                 <div class="field-container field-container-med">
+                  <button type="button" class="dropdown-btn"></button>
+                  <div class="dropdown-content">
+                    <p>Payment Services</p>
+                    <p>Credit Cards</p>
+                    <p>Travel</p>
+                    <p>I don't know</p>
+                    <p>Filler</p>
+                    <p>Blah</p>
+                  </div>
+                  <i class="fas fa-caret-down"></i>
                   <input class="form-field" type="text" name="subcategory" value="Select a subcategory">
                 </div>
               </li>
               <li>
                 <p class="form-sub-label">Company</p>
                 <div class="field-container field-container-med">
+                  <button type="button" class="dropdown-btn"></button>
+                  <div class="dropdown-content">
+                    <p>Bank of America</p>
+                    <p>Chase</p>
+                    <p>Discover</p>
+                    <p>AMEX</p>
+                  </div>
+                  <i class="fas fa-caret-down"></i>
                   <input class="form-field" type="text" name="company" value="">
                 </div>
               </li>
@@ -115,5 +139,8 @@
         </div>
       </section>
     </div>
+  <script type="text/javascript" src="offer-form.js">
+
+  </script>
   </body>
 </html>

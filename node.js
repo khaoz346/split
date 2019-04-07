@@ -18,12 +18,16 @@ app.get("/offer-form", (req,res) => {
   res.render('offer-form');
 })
 
+app.get("/register", (req,res) => {
+  res.render('register');
+})
+
 app.post("/offer-form", (req,res) => {
   let formData = req.body;
   console.log(formData);
   res.render('offer-form');
 })
 
-app.listen(3001, function(){
+app.listen(process.env.PORT || 3001, function(){
   console.log("Connected to port 3001.");
 });
